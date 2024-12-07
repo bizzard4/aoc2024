@@ -1,16 +1,13 @@
-import jdk.jshell.spi.ExecutionControl;
-
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Stream;
 
 public class D3 {
     public static void main(String[] args) {
-        InputStream is = d1.class.getClassLoader().getResourceAsStream("d3b.txt");
+        InputStream is = D1.class.getClassLoader().getResourceAsStream("d3b.txt");
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         var lines = reader.lines().toList();
 

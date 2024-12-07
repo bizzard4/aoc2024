@@ -2,12 +2,11 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.*;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class d1 {
+public class D1 {
     public static void main(String[] args) {
-        InputStream is = d1.class.getClassLoader().getResourceAsStream("d1.txt");
+        InputStream is = D1.class.getClassLoader().getResourceAsStream("d1.txt");
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         Stream<String> lines = reader.lines();
         List<Integer> colA = new ArrayList<>();

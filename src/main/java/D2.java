@@ -1,7 +1,6 @@
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -9,7 +8,7 @@ import java.util.stream.Stream;
 
 public class D2 {
     public static void main(String[] args) {
-        InputStream is = d1.class.getClassLoader().getResourceAsStream("d2.txt");
+        InputStream is = D1.class.getClassLoader().getResourceAsStream("d2.txt");
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         Stream<String> lines = reader.lines();
 
